@@ -30,7 +30,11 @@ namespace PersonBank.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "PersonBank.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "PersonBank.API", 
+                    Version = "v1",
+                    Description = "API Rest para gerenciamento de transacoes bancarias."
+                });
             });
         }
 
